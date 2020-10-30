@@ -1,0 +1,161 @@
+/* style para o menu top */
+.fixarTop {
+  position: fixed;
+  width: 100%;
+}
+.navMenu {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  box-shadow: 3px 3px 10px black;
+}
+.bordasMenu {
+  display: inline-block;
+  padding: 0;
+}
+.bordasMenu > li {
+  margin-right: 15px;
+
+  display: inline-block;
+  list-style: none;
+}
+.bordasMenu > li > a {
+  padding: 0 10px;
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+}
+.bordasMenu > li > a:hover {
+  text-decoration: underline;
+  transition: all 1s linear;
+}
+.bordasMenu > li:hover > ul {
+  display: block;
+}
+.subMenu {
+  position: absolute;
+  top: 96%;
+  padding: 0;
+  width: 190px;
+  margin: 0;
+  background-color: black;
+  display: none;
+  transform: translateX(-40px);
+}
+.subMenu > li {
+  list-style: none;
+  padding: 0;
+  height: 100%;
+}
+.subMenu > li > a {
+  display: block;
+  padding: 0px 0;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  border: white;
+  text-align: center;
+}
+.subMenu > li > a:hover {
+  background-color: rgb(36, 35, 35);
+}
+
+/* style para o icone do menu que gira */
+#check {
+  display: none;
+}
+
+.esconder {
+  transform: translateX(-700px);
+  transition: all 0.2s linear;
+}
+.mostrar {
+  transform: translateX(0);
+  transition: all 0.1s linear;
+}
+
+.labelHeader {
+  width: 50px;
+  height: 40px;
+  position: absolute;
+  box-sizing: border-box;
+  left: 0;
+  top: 6px;
+}
+span {
+  width: 35px;
+  height: 2px;
+  position: absolute;
+  top: 15px;
+  left: 8px;
+  bottom: 10px;
+  background-color: white;
+  transition: all 0.2s linear;
+}
+span::before {
+  background-color: white;
+  content: "";
+  width: 35px;
+  height: 2px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+
+  transition: all 0.2s linear;
+}
+span::after {
+  content: "";
+  width: 35px;
+  height: 2px;
+  top: 20px;
+  left: 0;
+  position: absolute;
+  background-color: white;
+  transition: all 0.2s linear;
+}
+
+#check:checked ~ label > span {
+  background-color: transparent;
+  transition: all 0.2s linear;
+  transform: rotate(360deg);
+}
+#check:checked ~ label > span::after {
+  transform: translate(0px, -10px) rotate(-45deg);
+}
+#check:checked ~ label > span::before {
+  transform: translate(0px, 0px) rotate(45deg);
+}
+
+/* style para o menu lateral */
+
+.menuLateral {
+  width: 23%;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(0, 0, 0);
+}
+
+.menuLateral > p {
+  padding: 0;
+
+  margin: 0;
+}
+.menuLateral > p > a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 23px;
+  padding: 15px;
+  text-align: center;
+}
+
+.menuLateral > p > a > i {
+  padding-left: 15px;
+}
+.menuLateral > p > a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  text-decoration: underline;
+}

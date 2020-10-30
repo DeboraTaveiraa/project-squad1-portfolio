@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap");
+
+:root {
+  --color-back: #282a36;
+  --color-line: #44475a;
+  --color-selection: #44475a;
+  --color-selection: #f8f8f2;
+  --color-comment: #6272a4;
+  --color-cyan: #8be9fd;
+  --color-green: #50fa7b;
+  --color-orange: #ffb86c;
+
+  --color-pink: #ff79c6;
+  --color-purple: #bd93f9;
+  --color-red: #ff5555;
+  --color-yellow: #f1fa8c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: var(--color-back);
+  color: #f8f8f2;
+}
+
+/*== .sessaoCabecalho {
+    text-align: center;
+    background-color: var(--color-line);
+    padding: 15px;
+}
+
+.bordasMenu a {
+    color: var(--color-pink);
+    text-decoration: none;
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 18px;
+} ==*/
+
+/*== SUBTITLE ==*/
+
+.subtitle {
+  text-align: center;
+  padding: 100px 0 70px;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.subtitle h2 {
+  color: var(--color-green);
+}
+
+/*== CARDS ==*/
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0px 10px 50px 10px;
+}
+
+.cards h1 {
+  color: var(--color-selection);
+  font-size: 28px;
+}
+
+.cards p {
+  color: var(--color-green);
+  font-size: 18px;
+}
+
+.info__card {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--color-line);
+  border-radius: 10px;
+  width: 550px;
+  margin: auto;
+  box-shadow: 2px 3px 10px black;
+}
+.info__card:hover {
+  border: solid white;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.ling {
+  height: auto;
+}
+
+.ling img {
+  height: 35px;
+  padding: 10px;
+}
+
+.ling > img:hover {
+  height: 45px;
+  width: 45px;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+
+.card__image img {
+  height: 300px;
+  border-radius: 14px;
+}
+
+.button button {
+  font-size: 24px;
+  color: var(--color-green);
+  background-color: #282a36;
+  padding: 14px;
+  border-radius: 14px;
+}
+
+/*== footer ==*/
+
+.dedsec p {
+  text-align: center;
+  font-size: 16px;
+  color: var(--color-green);
+  padding: 24px;
+  background-color: var(--color-line);
+}
