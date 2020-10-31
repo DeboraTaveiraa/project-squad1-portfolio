@@ -56,42 +56,58 @@
        </header>
     </section>
 
-    <main id="main-perfil">
-        <header>
-            <h5>Olá, eu sou</h5>
+    <div id="main-perfil">
+        <main>
+            <header>
+                <div class="ola">
+                    <h5>Olá, eu sou</h5>
+                </div>
+        
+                <h1>Débora Taveira</h1>
+                <p>Desenvolvedora Web</p>
+            </header>
+           
+            <div class="descricao-user">
+                <p>
+                    <span class="email"></span>
+                    deborataveira@gmail.com
+                </p>
+                <p>
+                    <span class="phone"></span> 
+                    +55 69 9 8116-9069
+                </p>
+                <p>
+                    <span class="address"></span> 
+                    Porto Velho, Rondônia, Brazil
+                </p>
+            </div>
     
-            <h1>Débora Taveira</h1>
-            <p>Desenvolvedora Web</p>
-        </header>
-       
-        <div class="contato-endereco">
-            <p>
-                <span></span> deborataveira@gmail.com
-            </p>
-            <p>
-                <span></span> +55 69 9 8116-9069
-            </p>
-            <p>
-                <span></span> Porto Velho, Rondônia, Brazil
-            </p>
-        </div>
-
-        <div class="redes-sociais">
-            <a href="#">
-                <img src="/public/images/facebook.png" alt="Facebook">
-            </a>
-            <a href="#">
-                <img src="/public/images/instagram.png" alt="Instagram">
-            </a>
-            <a href="#">
-                <img src="/public/images/github.png" alt="GitHub">
-            </a>
-        </div>
+            <div class="redes-sociais">
+                <a href="#" class="facebook">
+                    <img src="/public/images/facebook.png" 
+                    alt="Facebook" width="40"
+                    onmouseover="mouseEmCima(this)"
+                    onmouseout="mouseFora(this)">
+                </a>
+                <a href="#" class="instagram">
+                    <img src="/public/images/instagram.png" 
+                    alt="Instagram" width="40"
+                    onmouseover="mouseEmCima(this)"
+                    onmouseout="mouseFora(this)">
+                </a>
+                <a href="#" class="github">
+                    <img src="/public/images/github.png" 
+                    alt="GitHub" width="40"
+                    onmouseover="mouseEmCima(this)"
+                    onmouseout="mouseFora(this)">
+                </a>
+            </div>
+        </main>
 
         <div class="image-perfil">
-<!--             <img src="/public/images/debora.jpg" alt="Imagem de Débora Taveira">
- -->        </div>
-    </main>
+            <img src="/public/images/debora.jpg" alt="Imagem de Débora Taveira" width="200">
+        </div>
+    </div>
 
     <footer class="dedsec">
         <p>Dedsec - Todos os direitos reservados</p>
@@ -99,6 +115,6 @@
 
     <script src="../menuLateral.js"></script>
     <script src="https://kit.fontawesome.com/7591838c1e.js" crossorigin="anonymous"></script>
-
+    <script src="../portifolio.js"></script>
 </body>
 </html>

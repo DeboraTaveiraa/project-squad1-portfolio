@@ -1,3 +1,120 @@
-#main-perfil {
-    
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+html,
+body {
+  margin: 0;
+  height: 100%;
 }
+
+#main-perfil {
+  width: 80%;
+  min-height: 90%;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+#main-perfil main {
+    width: 300px;
+}
+
+#main-perfil header .ola {
+  background: var(--color-pink);
+  width: 120px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 15px 15px 15px 2px;
+  font-size: 20px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+}
+
+#main-perfil header h1 {
+  margin: 10px 0;
+
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+#main-perfil header p {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+
+  margin-bottom: 30px;
+}
+
+.descricao-user p {
+  display: flex;
+  align-items: center;
+
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+
+  line-height: 35px;
+}
+
+.descricao-user p span.email,
+.descricao-user p span.phone,
+.descricao-user p span.address {
+  background-size: 30px;
+  background-position-y: center;
+
+  width: 30px;
+  height: 30px;
+
+  margin-right: 10px;
+}
+
+.descricao-user span.email {
+  background: url("../images/email.png") no-repeat;
+}
+
+.descricao-user span.phone {
+  background: url("../images/phone.png") no-repeat;
+}
+
+.descricao-user span.address {
+  background: url("../images/marcador.png") no-repeat;
+}
+
+
+/* redes sociais */
+.redes-sociais {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+
+    width: 200px;
+    margin-top: 20px;
+}
+
+/* .redes-sociais img:hover {
+    display: none;
+    background: url("../images/insta-hover.png") no-repeat;
+    background-size: 40px;
+} */
+
+/* Imagem de perfil */
+.image-perfil {
+    width: 50%;
+    height: 300px;
+    text-align: center;
+}
+
+.image-perfil img {
+    border-radius: 120px;
+    border: 5px solid var(--color-pink);
+
+    box-shadow: 0 0 1em #fff;
+}
+

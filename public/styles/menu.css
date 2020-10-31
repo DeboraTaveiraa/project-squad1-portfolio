@@ -84,7 +84,7 @@
   left: 0;
   top: 6px;
 }
-span {
+.labelHeader span {
   width: 35px;
   height: 2px;
   position: absolute;
@@ -94,7 +94,7 @@ span {
   background-color: white;
   transition: all 0.2s linear;
 }
-span::before {
+.labelHeader span::before {
   background-color: white;
   content: "";
   width: 35px;
@@ -105,7 +105,7 @@ span::before {
 
   transition: all 0.2s linear;
 }
-span::after {
+.labelHeader span::after {
   content: "";
   width: 35px;
   height: 2px;
@@ -121,10 +121,10 @@ span::after {
   transition: all 0.2s linear;
   transform: rotate(360deg);
 }
-#check:checked ~ label > span::after {
+#check:checked ~ label > .labelHeader span::after {
   transform: translate(0px, -10px) rotate(-45deg);
 }
-#check:checked ~ label > span::before {
+#check:checked ~ label > .labelHeader span::before {
   transform: translate(0px, 0px) rotate(45deg);
 }
 
