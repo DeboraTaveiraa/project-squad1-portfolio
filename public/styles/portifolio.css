@@ -3,21 +3,17 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
-html{
+body {
   height: 100%;
 }
 
-
-body, #portfolio {
-  min-height: 100%;
-  padding-top: 70px;
-}
-
 #portfolio {
+  min-height: 100%;
+  padding-top: 140px;
   width: 100%;
-  margin: 0 auto;
 
   display: flex;
   align-items: center;
@@ -26,6 +22,7 @@ body, #portfolio {
 
 #portfolio .container {
   width: 70%;
+  min-width: 600px;
   height: 400px;
 
   display: flex;
@@ -39,8 +36,8 @@ body, #portfolio {
 }
 
 #portfolio main {
-    width: 300px;
-    margin-left: 20px;
+  width: 300px;
+  margin-left: 20px;
 }
 
 #portfolio header .ola {
@@ -56,6 +53,8 @@ body, #portfolio {
   font-size: 20px;
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
+
+  color: #fff;
 }
 
 #portfolio header h1 {
@@ -109,29 +108,18 @@ body, #portfolio {
   background: url("../images/marcador.png") no-repeat;
 }
 
-
-/* redes sociais */
-.redes-sociais {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 20px;
-
-    width: 200px;
-    margin-top: 20px;
-}
-
 /* Imagem de perfil */
 .image-perfil {
-    width: 50%;
-    height: 300px;
-    text-align: center;
+  width: 50%;
+  height: 300px;
+  text-align: center;
 }
 
 .image-perfil img {
-    border-radius: 120px;
-    border: 5px solid var(--color-pink);
+  border-radius: 120px;
+  border: 5px solid var(--color-pink);
 
-    box-shadow: 0 0 1em #fff;
+  box-shadow: 0 0 1em rgb(179, 0, 119);
 }
 
 /* Rodapé */
