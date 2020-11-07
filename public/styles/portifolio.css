@@ -10,11 +10,17 @@ body {
   height: 100%;
 }
 
-#portfolio {
-  border: 1px solid red;
-  min-height: 100%;
-  padding-top: 140px;
+#container-portfolio {
   width: 100%;
+  min-width: 1415px;
+  display: flex;
+  flex-direction: column;
+  justify-self: space-between;
+}
+
+#portfolio {
+  width: 100%;
+  padding-top: 140px;
 
   display: flex;
   flex-direction: column;
@@ -22,9 +28,12 @@ body {
   justify-content: center;
 }
 
-#portfolio .container {
+#portfolio .content-portfolio {
   width: 70%;
   min-width: 600px;
+}
+
+.content-portfolio #header-portfolio {
   height: 400px;
 
   display: flex;
@@ -37,12 +46,12 @@ body {
   color: #000000;
 }
 
-#portfolio main {
+.content-portfolio main {
   width: 300px;
   margin-left: 40px;
 }
 
-#portfolio header .ola {
+.content-portfolio header .ola {
   background: var(--color-pink);
   width: 120px;
   height: 30px;
@@ -59,7 +68,7 @@ body {
   color: #fff;
 }
 
-#portfolio header h1 {
+.content-portfolio header h1 {
   margin: 10px 0;
 
   font-family: "Ubuntu", sans-serif;
@@ -67,7 +76,7 @@ body {
   font-size: 40px;
 }
 
-#portfolio header p {
+.content-portfolio header p {
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -125,8 +134,9 @@ body {
 }
 
 /* Rodapé */
-footer {
+#container-portfolio footer {
   position: relative;
   bottom: 0;
   width: 100%;
+  min-width: 1415px;
 }
