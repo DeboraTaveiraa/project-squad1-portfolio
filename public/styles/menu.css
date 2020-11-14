@@ -218,6 +218,25 @@
    text-decoration: underline #B8860B;
  }
 
+ #navbar ul > li:hover > ul {
+  display: block;
+}
+
+.subMenu {
+  position: absolute;
+  top: 96%;
+  padding: 0;
+  width: 190px;
+  margin: 0;
+  background-color: black; 
+  display: none;
+  transform: translateX(-40px);
+}
+
+#navbar ul li .subMenu li a:hover {
+  text-decoration: underline dotted  #B8860B;
+}
+
  .checkbtn {
    font-size: 30px;
    color: #fff;
