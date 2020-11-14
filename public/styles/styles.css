@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 
 :root {
   --color-back: #282a36;
@@ -20,6 +21,7 @@
   margin: 0;
   padding: 0;
   border: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -34,11 +36,11 @@ body {
   padding: 100px 0 70px;
   font-size: 30px;
   text-transform: uppercase;
+  color: #00CED1;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
 }
 
-.subtitle h2 {
-  color: var(--color-green);
-}
 
 /*== CARDS ==*/
 
@@ -48,36 +50,35 @@ body {
   padding: 0px 10px 50px 10px;
 }
 
-.cards h1 {
-  color: var(--color-selection);
-  font-size: 28px;
-}
-
-.cards p {
-  color: var(--color-green);
-  font-size: 18px;
-}
-
 .info__card {
   text-align: center;
   padding: 20px;
-  background-color: var(--color-line);
+  background: var(--color-line);
   border-radius: 10px;
   width: 550px;
   margin: auto;
   box-shadow: 2px 3px 10px black;
+  margin-bottom: 20px;
+
 }
+
+.info__card h1 {
+  color: white;
+  font-size: 28px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+}
+
 .info__card:hover {
-  border: solid white;
-  padding: 15px;
-  background-color: rgba(255, 255, 255, 0.1);
-}
+  border: 1px solid white;
+  background-color: rgba(255,255,255,0.1);}
+
 .ling {
   height: auto;
 }
 
 .ling img {
-  height: 35px;
+  height: 50px;
   padding: 10px;
 }
 
@@ -95,10 +96,17 @@ body {
 
 .button button {
   font-size: 24px;
-  color: var(--color-green);
+  color: #00CED1;
   background-color: #282a36;
   padding: 14px;
   border-radius: 14px;
+  transition: 0.4s;
+}
+
+.button button:hover {
+  background-color: #00CED1;
+  color:  #282a36;
+
 }
 
 /*== footer ==*/
@@ -106,7 +114,7 @@ body {
 .dedsec p {
   text-align: center;
   font-size: 16px;
-  color: var(--color-green);
+  color: white;
   padding: 24px;
   background-color: var(--color-line);
 }

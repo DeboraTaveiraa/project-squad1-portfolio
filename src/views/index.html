@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/styles/styles.css">
     <link rel="stylesheet" href="/public/styles/menu.css">
+    <link rel="stylesheet" href="/public/styles/media-query.css">
     
    
     <title>Portfólio 1.0 mil grau</title>
@@ -14,44 +15,28 @@
 
     <section class='sessaoCabecalho'>
 
-        <header>
-           
-           <div class="fixarTop">
-              
+        <header class="fixarTop">
+
                <nav class="navMenu">
 
                    <ul class='bordasMenu'>
                
-                   <li> <a href="">Principal</a> </li>
-                   <li> <a href="">Linguagem Geral</a> </li>
-                   <li> <a href="">Contatos</a> </li>
-                   <li> <a href="">Privacidade</a> </li>
+                        <li class="txtMenu"> <a href="">Principal</a> </li>
+                        <li class="txtMenu"> <a href="">Linguagem Geral</a> </li>
+                        <li class="txtMenu"> <a href="">Sobre</a> </li>
 
-                   <li style="position: relative;"> <a href="">Portfólio</a> 
-                        <ul class="subMenu">
-                            <li><a href="">Anderson</a></li>
-                            <li><a href="/src/views/debora.html">Débora</a/a></li>
-                            <li><a href="">Diego</a></li>
-                            <li><a href="">Elbis</a></li>
-                        </ul>
-                    </li>
-              
+                        <li class="txtMenu" style="position: relative;"> <a href="">Portfólios</a> 
+                            <ul class="subMenu">
+                                <li><a href="">Anderson</a></li>
+                                <li><a href="/src/views/debora.html">Débora</a/a></li>
+                                <li><a href="">Diego</a></li>
+                                <li><a href="">Elbis</a></li>
+                            </ul>
+                        </li>
                    </ul>
-                   <input type="checkbox" id="check">
-                   <label class="labelHeader" for="check"><span></span></label>
                </nav>
 
-               <div class="menuLateral">
-                   <p><a href="">Login <i class="fas fa-sign-in-alt"></i></a></p>
-                   <p><a href="">Fotos <i class="fas fa-images"></i></a></p>
-                   <p><a href="">Compartilhe <i class="fas fa-share-alt-square"></i></a></p>
-                   <p><a href="">Blogs <i class="fas fa-blog"></i></a></p>
-                   <p><a href="">Localização <i class="fas fa-map-marker-alt"></i></a></p>
-               </div>
                
-           </div>
-       
-           
        </header>
    </section>
 
@@ -60,7 +45,7 @@
     </div>
 
 
-    <header>
+    <header id="cards">
         <section class="cards">
             <div class="info__card">
                 <div class="card__image">
@@ -69,19 +54,17 @@
                 <div class="content">
                     <h1>Anderson Teala</h1>
                 </div>
-                <div class="card__info">
-                    <p>Clique para ver as informações do dev</p>
-                </div>
+                
                 <div class="ling">
-                    <img src="/public/images/dev/030-html-5.png" alt="HTML5">
-                    <img src="/public/images/dev/031-css.png" alt="CSS">
-                    <img src="/public/images/dev/029-javascript.png" alt="JAVASCRIPT">
-                    <img src="/public/images/dev/005-python.png" alt="PYTHON">
-                    <img src="/public/images/dev/010-github.png" alt="GITHUB">
-                    <img src="/public/images/dev/004-docker.png" alt="DOCKER">
+                    <img src="/public/images/html.png" alt="HTML5">
+                    <img src="/public/images/css.png" alt="CSS">
+                    <img src="/public/images/js.png" alt="JAVASCRIPT">
+                    <img src="/public/images/python.png" alt="PYTHON">
+                    <img src="/public/images/github2.png" alt="GITHUB">
+                    <img src="/public/images/docker.png" alt="DOCKER">
                 </div>
                 <div class="button">
-                    <button>Clique aqui</button>
+                    <button>Ir para o portfólio</button>
                 </div>
             </div>
 
@@ -92,19 +75,17 @@
                 <div class="content">
                     <h1>Diego</h1>
                 </div>
-                <div class="card__info">
-                    <p>Clique para ver as informações do dev</p>
-                </div>
+                
                 <div class="ling">
-                    <img src="/public/images/dev/030-html-5.png" alt="HTML5">
-                    <img src="/public/images/dev/031-css.png" alt="CSS">
-                    <img src="/public/images/dev/029-javascript.png" alt="JAVASCRIPT">
-                    <img src="/public/images/dev/005-python.png" alt="PYTHON">
-                    <img src="/public/images/dev/010-github.png" alt="GITHUB">
-                    <img src="/public/images/dev/004-docker.png" alt="DOCKER">
+                    <img src="/public/images/html.png" alt="HTML5">
+                    <img src="/public/images/css.png" alt="CSS">
+                    <img src="/public/images/js.png" alt="JAVASCRIPT">
+                    <img src="/public/images/python.png" alt="PYTHON">
+                    <img src="/public/images/github2.png" alt="GITHUB">
+                    <img src="/public/images/docker.png" alt="DOCKER">
                 </div>
                 <div class="button">
-                    <button>Clique aqui</button>
+                    <button>Ir para o portfólio</button>
                 </div>
             </div>
 
@@ -119,19 +100,17 @@
                 <div class="content">
                     <h1>Débora Taveira</h1>
                 </div>
-                <div class="card__info">
-                    <p>Clique para ver as informações do dev</p>
-                </div>
+                
                 <div class="ling">
-                    <img src="/public/images/dev/030-html-5.png" alt="HTML5">
-                    <img src="/public/images/dev/031-css.png" alt="CSS">
-                    <img src="/public/images/dev/029-javascript.png" alt="JAVASCRIPT">
-                    <img src="/public/images/dev/005-python.png" alt="PYTHON">
-                    <img src="/public/images/dev/010-github.png" alt="GITHUB">
-                    <img src="/public/images/dev/004-docker.png" alt="DOCKER">
+                    <img src="/public/images/html.png" alt="HTML5">
+                    <img src="/public/images/css.png" alt="CSS">
+                    <img src="/public/images/js.png" alt="JAVASCRIPT">
+                    <img src="/public/images/python.png" alt="PYTHON">
+                    <img src="/public/images/github2.png" alt="GITHUB">
+                    <img src="/public/images/docker.png" alt="DOCKER">
                 </div>
                 <div class="button">
-                    <button>Clique aqui</button>
+                    <button>Ir para o portfólio</button>
                 </div>
             </div>
 
@@ -142,19 +121,17 @@
                 <div class="content">
                     <h1>Elbis</h1>
                 </div>
-                <div class="card__info">
-                    <p>Clique para ver as informações do dev</p>
-                </div>
+                
                 <div class="ling">
-                    <img src="/public/images/dev/030-html-5.png" alt="HTML5">
-                    <img src="/public/images/dev/031-css.png" alt="CSS">
-                    <img src="/public/images/dev/029-javascript.png" alt="JAVASCRIPT">
-                    <img src="/public/images/dev/005-python.png" alt="PYTHON">
-                    <img src="/public/images/dev/010-github.png" alt="GITHUB">
-                    <img src="/public/images/dev/004-docker.png" alt="DOCKER">
+                    <img src="/public/images/html.png" alt="HTML5">
+                    <img src="/public/images/css.png" alt="CSS">
+                    <img src="/public/images/js.png" alt="JAVASCRIPT">
+                    <img src="/public/images/python.png" alt="PYTHON">
+                    <img src="/public/images/github2.png" alt="GITHUB">
+                    <img src="/public/images/docker.png" alt="DOCKER">
                 </div>
                 <div class="button">
-                    <button>Clique aqui</button>
+                    <button>Ir para o portfólio</button>
                 </div>
             </div>
 

@@ -1,36 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
 /* style para o menu top */
 .fixarTop {
   position: fixed;
   width: 100%;
+  background-color: black; 
+  box-shadow: 3px 3px 10px black;
+  display: flex;
+  justify-content: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-size: 25px;
 }
+
 .navMenu {
-  background-color: rgba(0, 0, 0, 0.4);
+  width: 90%;
   height: 70px;
   line-height: 70px;
   text-align: center;
-  box-shadow: 3px 3px 10px black;
 }
+
 .bordasMenu {
-  display: inline-block;
-  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .bordasMenu > li {
   margin-right: 15px;
-
-  display: inline-block;
   list-style: none;
 }
+
 .bordasMenu > li > a {
   padding: 0 10px;
-  color: black;
   text-decoration: none;
-  font-size: 25px;
   color: white;
 }
+
 .bordasMenu > li > a:hover {
   text-decoration: underline;
   transition: all 1s linear;
 }
+
 .bordasMenu > li:hover > ul {
   display: block;
 }
@@ -40,30 +51,28 @@
   padding: 0;
   width: 190px;
   margin: 0;
-  background-color: black;
+  background-color: black; 
   display: none;
   transform: translateX(-40px);
 }
+
 .subMenu > li {
   list-style: none;
-  padding: 0;
   height: 100%;
 }
+
 .subMenu > li > a {
-  display: block;
-  padding: 0px 0;
-  font-size: 25px;
   color: white;
   text-decoration: none;
-  border: white;
   text-align: center;
 }
+
 .subMenu > li > a:hover {
   background-color: rgb(36, 35, 35);
 }
 
 /* style para o icone do menu que gira */
-#check {
+/* #check {
   display: none;
 }
 
@@ -127,10 +136,12 @@
 #check:checked ~ label > .labelHeader span::before {
   transform: translate(0px, 0px) rotate(45deg);
 }
+ */
+
 
 /* style para o menu lateral */
 
-.menuLateral {
+/* .menuLateral {
   width: 23%;
   position: absolute;
   padding: 0;
@@ -159,3 +170,4 @@
   background-color: rgba(255, 255, 255, 0.1);
   text-decoration: underline;
 }
+ */

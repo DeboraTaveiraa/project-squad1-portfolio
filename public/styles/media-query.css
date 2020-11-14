@@ -1,0 +1,156 @@
+/* responsivo mobile */
+
+@media (max-width: 405px) {
+    header#cards {
+        margin-bottom: 40px;
+    }
+    
+    .info__card {
+        width: 70%;
+        margin-bottom: 40px;
+    }
+
+    .card__image img{
+        width: 90%;
+        height: 200px; 
+    }
+
+    .cards {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    .button button{
+        padding: 5px;
+    }
+
+    .subtitle >h2{
+        font-size: 30px;
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+
+    .cards h1 {
+        font-size: 20px;
+    }
+    
+    .cards p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 406px) and (max-width: 650px) {
+    header#cards {
+        margin-bottom: 40px;
+    }
+
+    .info__card {
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 655.98px) { 
+    .menuLateral{
+        width: 200px;
+    }
+    
+    .p > a{
+        display: none;
+     }
+
+     .l >a{
+         display: none;
+     }
+
+     .bordasMenu > li{
+         margin:0;
+     }
+
+     header#cards {
+         margin-bottom: 40px;
+     }
+
+     .info__card {
+        width: 80%;
+    }
+    .cards {
+        display: block;
+        padding: 0;
+    }
+
+    form{
+        width: 55%;
+    }
+ }
+
+/* 
+   === METADE DA TELA DESKTOP ===
+*/
+@media (min-width: 656px) and (max-width: 861.98px) { 
+    .bordasMenu > li >a {
+        padding: 0;
+        margin:0;
+    }
+        
+    .menuLateral {
+        width: 200px;
+    }
+        
+    .p > a{
+        display: none;
+    }
+
+    header#cards {
+        margin-bottom: 50px;
+    }
+    
+    .cards {
+        display: block;
+        padding: 0;
+    }
+
+    .info__card{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+        
+    form{
+        width: 41%;
+    }
+ }
+
+/* // Medio */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .bordasMenu > li > a{
+        padding: 0;
+    }
+
+    header#cards {
+        margin-bottom: 40px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    .info__card{
+        width: 85%;
+        margin-bottom: 40px;
+    }
+ }
+
+/* largo */
+@media (min-width: 992px) and (max-width: 1235.98px) { 
+    header#cards {
+        margin-bottom: 40px;
+    }
+
+    .info__card{
+        width: 90%;
+    }
+ }
