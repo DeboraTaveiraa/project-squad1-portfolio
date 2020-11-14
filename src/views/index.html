@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/styles/styles.css">
     <link rel="stylesheet" href="/public/styles/menu.css">
+    <link rel="stylesheet" href="/public/styles/menu-responsive.css">
     <link rel="stylesheet" href="/public/styles/media-query.css">
     
    
@@ -13,7 +14,7 @@
 </head>
 <body>
 
-    <section class='sessaoCabecalho'>
+    <!-- <section class='sessaoCabecalho'>
 
         <header class="fixarTop">
 
@@ -38,11 +39,27 @@
 
                
        </header>
-   </section>
+   </section> -->
 
-    <div class="subtitle">
+   <nav id="navbar">
+       <input type="checkbox" id="check">
+       <label for="check" class="checkbtn">
+           <i class="fas fa-bars"></i>
+       </label>
+       <!-- Essa label do logo só fica visível na versão mobile -->
+       <label class="logo">Portfólio Devs</label>
+
+       <ul>
+            <li><a class="active" href="#">Principal</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Portfólios</a></li>
+            <li><a href="#">Contato</a></li>
+       </ul>
+   </nav>
+
+    <!-- <div class="subtitle">
         <h2>Portfólio - Devs</h2>
-    </div>
+    </div> -->
 
 
     <header id="cards">
