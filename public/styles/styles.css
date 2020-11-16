@@ -85,6 +85,7 @@ header#cards {
 .ling img {
   height: 50px;
   padding: 10px;
+  transition: 0.4s;
 }
 
 .ling > img:hover {
@@ -101,17 +102,18 @@ header#cards {
 
 .button button {
   font-size: 24px;
-  color: #40E0D0;
-  background-color: #282a36;
   padding: 14px;
   border-radius: 14px;
+  border: 4px solid #ccc;
   transition: 0.4s;
+  color:  #00ced1;
+  background: none;
 }
 
 .button button:hover {
   background-color: #00CED1;
-  color:  #282a36;
-
+  color: #282a36;
+  border: 4px solid #00CED1;
 }
 
 /*== footer ==*/

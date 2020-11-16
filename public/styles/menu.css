@@ -1,177 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
 
-/* style para o menu top */
-/* .fixarTop {
-  position: fixed;
-  width: 100%;
-  background-color: black; 
-  box-shadow: 3px 3px 10px black;
-  display: flex;
-  justify-content: center;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 300;
-  font-size: 25px;
-}
-
-.navMenu {
-  width: 90%;
-  height: 70px;
-  line-height: 70px;
-  text-align: center;
-}
-
-.bordasMenu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.bordasMenu > li {
-  margin-right: 15px;
-  list-style: none;
-}
-
-.bordasMenu > li > a {
-  padding: 0 10px;
-  text-decoration: none;
-  color: white;
-}
-
-.bordasMenu > li > a:hover {
-  text-decoration: underline;
-  transition: all 1s linear;
-}
-
-.bordasMenu > li:hover > ul {
-  display: block;
-}
-.subMenu {
-  position: absolute;
-  top: 96%;
-  padding: 0;
-  width: 190px;
-  margin: 0;
-  background-color: black; 
-  display: none;
-  transform: translateX(-40px);
-}
-
-.subMenu > li {
-  list-style: none;
-  height: 100%;
-}
-
-.subMenu > li > a {
-  color: white;
-  text-decoration: none;
-  text-align: center;
-}
-
-.subMenu > li > a:hover {
-  background-color: rgb(36, 35, 35);
-}
-
-/* style para o icone do menu que gira */
-/* #check {
-  display: none;
-} */
-
-/* .esconder {
-  transform: translateX(-700px);
-  transition: all 0.2s linear;
-}
-.mostrar {
-  transform: translateX(0);
-  transition: all 0.1s linear;
-}
-
-.labelHeader {
-  width: 50px;
-  height: 40px;
-  position: absolute;
-  box-sizing: border-box;
-  left: 0;
-  top: 6px;
-}
-.labelHeader span {
-  width: 35px;
-  height: 2px;
-  position: absolute;
-  top: 15px;
-  left: 8px;
-  bottom: 10px;
-  background-color: white;
-  transition: all 0.2s linear;
-}
-.labelHeader span::before {
-  background-color: white;
-  content: "";
-  width: 35px;
-  height: 2px;
-  position: absolute;
-  top: 10px;
-  left: 0;
-
-  transition: all 0.2s linear;
-}
-.labelHeader span::after {
-  content: "";
-  width: 35px;
-  height: 2px;
-  top: 20px;
-  left: 0;
-  position: absolute;
-  background-color: white;
-  transition: all 0.2s linear;
-}
-
-#check:checked ~ label > span {
-  background-color: transparent;
-  transition: all 0.2s linear;
-  transform: rotate(360deg);
-}
-#check:checked ~ label > .labelHeader span::after {
-  transform: translate(0px, -10px) rotate(-45deg);
-}
-#check:checked ~ label > .labelHeader span::before {
-  transform: translate(0px, 0px) rotate(45deg);
-}
- */
-
-/* style para o menu lateral */
-
-/* .menuLateral {
-  width: 23%;
-  position: absolute;
-  padding: 0;
-  margin: 0;
-  background-color: rgba(0, 0, 0);
-}
-
-.menuLateral > p {
-  padding: 0;
-
-  margin: 0;
-}
-.menuLateral > p > a {
-  display: block;
-  text-decoration: none;
-  color: white;
-  font-size: 23px;
-  padding: 15px;
-  text-align: center;
-}
-
-.menuLateral > p > a > i {
-  padding-left: 15px;
-}
-.menuLateral > p > a:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  text-decoration: underline;
-}
- */
-
- #navbar {
+#navbar {
   text-decoration: none;
   list-style: none;
   font-family: "Ubuntu", sans-serif;
@@ -182,43 +11,43 @@
   height: 80px;
   width: 100%;
   position: fixed;
- }
+}
 
- label.logo {
-   color:#00CED1;
-   font-size: 35px;
-   line-height: 80px;
-   padding: 0 100px;
-   font-weight: 700;
- }
+label.logo {
+  color: #00ced1;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: 700;
+}
 
- #navbar ul {
-   float: right;
-   margin-right: 20px;
- }
+#navbar ul {
+  float: right;
+  margin-right: 20px;
+}
 
- #navbar ul li {
-   display: inline-block;
-   line-height: 80px;
-   margin: 0 5px;
- }
+#navbar ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
 
- #navbar ul li a {
-   color: #fff;
-   font-size: 25px;
-   padding: 7px 13px;
-   border-radius: 3px;
-   text-decoration: none;
-   text-transform: uppercase;
-   font-weight: 400;
- }
+#navbar ul li a {
+  color: #fff;
+  font-size: 25px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+}
 
- #navbar ul li a.active,
- #navbar ul li a:hover {
-   text-decoration: underline #B8860B;
- }
+#navbar ul li a.active,
+#navbar ul li a:hover {
+  text-decoration: underline #b8860b;
+}
 
- #navbar ul > li:hover > ul {
+#navbar ul > li:hover > ul {
   display: block;
 }
 
@@ -228,25 +57,25 @@
   padding: 0;
   width: 190px;
   margin: 0;
-  background-color: black; 
+  background-color: black;
   display: none;
   transform: translateX(-40px);
 }
 
 #navbar ul li .subMenu li a:hover {
-  text-decoration: underline dotted  #B8860B;
+  text-decoration: underline dotted #b8860b;
 }
 
- .checkbtn {
-   font-size: 30px;
-   color: #fff;
-   float: right;
-   line-height: 80px;
-   margin-right: 40px;
-   cursor: pointer;
-   display: none;
- }
+.checkbtn {
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
 
- #check {
-   display: none;
- }
+#check {
+  display: none;
+}

@@ -4,54 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/styles/styles.css">
-    <link rel="stylesheet" href="/public/styles/portifolio.css">
+    <link rel="stylesheet" href="/public/styles/portfolio-debora.css">
     <link rel="stylesheet" href="/public/styles/cards-portfolio.css">
     <link rel="stylesheet" href="/public/styles/menu.css">
+    <link rel="stylesheet" href="/public/styles/menu-responsive.css">
     <link rel="stylesheet" href="/public/styles/responsive.css">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="/public/styles/3D-icons.css">
     
    
-    <title>Portfólio 1.0 mil grau</title>
+    <title>Portfólio - Débora Taveira</title>
     
 </head>
 <body>
 
     <div id="container-portfolio">
-        <section class="sessaoCabecalho">
-            <header>
-               <div class="fixarTop">
-                   <nav class="navMenu">
-                       <ul class='bordasMenu'>
-                       <li> <a href="index.html">Principal</a> </li>
-                       <li> <a href="">Linguagem Geral</a> </li>
-                       <li> <a href="">Contatos</a> </li>
-                       <li> <a href="">Privacidade</a> </li>
-    
-                       <li style="position: relative;"> <a href="">Portfólio</a> 
-                            <ul class="subMenu">
-                                <li><a href="">Anderson</a></li>
-                                <li><a href="">Débora</a/a></li>
-                                <li><a href="">Diego</a></li>
-                                <li><a href="">Elbis</a></li>
-                            </ul>
-                        </li>
-                       </ul>
-                       <input type="checkbox" id="check">
-                       <label class="labelHeader" for="check"><span></span></label>
-                   </nav>
-    
-                   <div class="menuLateral">
-                       <p><a href="">Login <i class="fas fa-sign-in-alt"></i></a></p>
-                       <p><a href="">Fotos <i class="fas fa-images"></i></a></p>
-                       <p><a href="">Compartilhe <i class="fas fa-share-alt-square"></i></a></p>
-                       <p><a href="">Blogs <i class="fas fa-blog"></i></a></p>
-                       <p><a href="">Localização <i class="fas fa-map-marker-alt"></i></a></p>
-                   </div>
-               </div>
-           </header>
-        </section>
+        <nav id="navbar">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <!-- Essa label do logo só fica visível na versão mobile -->
+            <label class="logo">Portfólio Devs</label>
+     
+            <ul>
+                 <li><a href="index.html">Principal</a></li>
+                 <li><a href="#">Sobre</a></li>
+                 <li><a class="active" href="#">Portfólios</a>
+                     <ul class="subMenu">
+                         <li><a href="">Anderson</a></li>
+                         <li><a href="/src/views/portfolio-debora.html">Débora</a/a></li>
+                         <li><a href="">Diego</a></li>
+                         <li><a href="">Elbis</a></li>
+                     </ul>
+                 </li>
+                 <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
     
         <div id="portfolio">
             <div class="content-portfolio">
